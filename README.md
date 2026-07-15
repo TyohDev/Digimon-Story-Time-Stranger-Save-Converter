@@ -3,7 +3,7 @@ WIP
 
 > **Note**: This is a "vibe coded" project, created dynamically through an AI pair programming session.
 
-This application allows you to convert save files for Digimon Story Cyber Sleuth: Complete Edition between the PC and Nintendo Switch versions.
+This application allows you to convert save files for Digimon Story Time Stranger between the PC and Nintendo Switch versions.
 
 **⚠️ IMPORTANT WARNING ⚠️**  
 PC to Switch save conversion is **untested** because not all DLC has been released for the Switch version of the game yet. Please proceed with caution and always back up your original saves!
