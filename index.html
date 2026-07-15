@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSTS Save Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>DSTS Save Converter</h1>
+      <p>Seamlessly convert your Digimon Story: Time Stranger save files between PC and Nintendo Switch.</p>
+    </header>
+
+    <main class="main-content">
+      <div class="card direction-card">
+        <h2>Conversion Direction</h2>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="direction" value="switch-to-pc" checked>
+            <span class="custom-radio"></span>
+            Switch ➔ PC
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="direction" value="pc-to-switch">
+            <span class="custom-radio"></span>
+            PC ➔ Switch
+          </label>
+        </div>
+      </div>
+
+      <div class="card folder-card">
+        <h2>Select Folders</h2>
+        
+        <div class="folder-selection">
+          <div class="folder-info">
+            <h3>Input Folder (Source)</h3>
+            <div id="input-path" class="path-display">No folder selected</div>
+          </div>
+          <button id="btn-input" class="btn primary-btn">Browse</button>
+        </div>
+
+        <div class="folder-selection" id="template-zip-section" style="display: none;">
+          <div class="folder-info">
+            <h3>Original Switch Backup ZIP (Template)</h3>
+            <div id="template-path" class="path-display">Required for JKSV ZIPs</div>
+          </div>
+          <button id="btn-template" class="btn primary-btn">Browse ZIP</button>
+        </div>
+
+        <div class="folder-selection">
+          <div class="folder-info">
+            <h3>Output Folder (Destination)</h3>
+            <div id="output-path" class="path-display">No folder selected</div>
+          </div>
+          <button id="btn-output" class="btn primary-btn">Browse</button>
+        </div>
+      </div>
+
+      <div class="action-container">
+        <button id="btn-convert" class="btn convert-btn" disabled>Convert Saves</button>
+      </div>
+
+      <div id="status-message" class="status-message"></div>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

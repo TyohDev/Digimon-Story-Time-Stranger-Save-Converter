@@ -1,0 +1,1 @@
+cmd_Release/obj.target/xxhash.node := g++ -o Release/obj.target/xxhash.node -shared -pthread -rdynamic -m64  -Wl,-soname=xxhash.node -Wl,--start-group Release/obj.target/xxhash/lib/binding/xxhash_binding.o Release/obj.target/xxhash/deps/lz4/lib/xxhash.o -Wl,--end-group 

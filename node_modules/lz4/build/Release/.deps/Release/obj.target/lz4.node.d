@@ -1,0 +1,1 @@
+cmd_Release/obj.target/lz4.node := g++ -o Release/obj.target/lz4.node -shared -pthread -rdynamic -m64  -Wl,-soname=lz4.node -Wl,--start-group Release/obj.target/lz4/lib/binding/lz4_binding.o Release/obj.target/lz4/deps/lz4/lib/lz4.o Release/obj.target/lz4/deps/lz4/lib/lz4hc.o -Wl,--end-group 
